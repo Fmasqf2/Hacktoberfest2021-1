@@ -1,0 +1,19 @@
+// One Object without User use.
+#include<iostream>
+#include<cstring>
+using namespace std;
+
+struct student   {
+    char name[30];
+    int _class;
+    int class_no;
+};
+int main()
+{
+    struct student s1;
+    strcpy(s1.name, "Mohammed Ashfaq Qureshi");
+    s1._class = 8;
+    s1.class_no = 42;
+    cout << "\nDisplaying value: -\n\n";
+    cout << s1.name << endl << s1._class << endl << s1.class_no << endl << endl;
+}
